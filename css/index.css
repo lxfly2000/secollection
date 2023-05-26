@@ -1,0 +1,30 @@
+﻿.CenterRoot{
+    max-width: 1024px;
+    margin: 0 auto;/*上下边距为0，左右使自身内容剧中自适应*/
+}
+.GroupLinks{
+    margin: 50px 0;/*上下间隔50，左右为0*/
+}
+.RecommendedLinks{
+    margin: 0 25px 0 0;
+}
+.Footer{
+    margin: 50px 0;
+    text-align: right;
+}
+/*剧中不好看，还是算了吧*/
+/*.RootLinks{
+    margin: 0 auto;
+    width: 360px;
+}*/
+#divButtons{
+    text-align: center;
+}
+#buttonSearch{
+    padding: 10px 20px;
+    font-size: 24pt;
+}
+#textQuery{
+    width: 100%;
+    font-size: 24pt;
+}
