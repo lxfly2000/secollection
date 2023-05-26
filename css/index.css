@@ -27,4 +27,5 @@
 #textQuery{
     width: 100%;
     font-size: 24pt;
+    box-sizing: border-box;
 }

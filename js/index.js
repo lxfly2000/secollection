@@ -45,5 +45,5 @@ function GetSearchEngine(){
 function GoSearch(){
     var se=GetSearchEngine();
     SaveSettings(se);
-    location.href=se.replace("{query}",textQuery.value);
+    location.href=se.replace("{query}",encodeURIComponent(textQuery.value));
 }
