@@ -9,6 +9,7 @@ function OnLoad(){
             return false;
         }
     };
+    textQuery.focus();
 }
 
 //加载设置
