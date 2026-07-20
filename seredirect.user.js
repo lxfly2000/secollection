@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         使用我的搜索引擎
 // @namespace    https://github.com/lxfly2000/secollection/raw/master/seredirect.user.js
-// @version      0.2
+// @version      0.2.1
 // @updateURL    https://github.com/lxfly2000/secollection/raw/master/seredirect.user.js
 // @downloadURL  https://github.com/lxfly2000/secollection/raw/master/seredirect.user.js
 // @description  将常见的搜索引擎主页跳转到我的搜索引擎页面
@@ -9,8 +9,8 @@
 // @match        *://*.bing.com/
 // @match        *://www.baidu.com/
 // @match        *://www.bilibili.com/
-// @match        *://safebooru.donmai.us/
-// @match        *://konachan.net/
+// @match        *://safebooru.donmai.us/*
+// @match        *://konachan.net/*
 // @icon         https://avatars0.githubusercontent.com/u/11847274
 // @grant        none
 // ==/UserScript==
