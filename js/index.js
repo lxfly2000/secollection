@@ -22,7 +22,7 @@ function LoadSE(){
         if(xhr.readyState===4 && xhr.status===200){
             seList=JSON.parse(xhr.responseText);
             for(var i=0;i<seList.length;i++){
-                fieldSEs.innerHTML+=`<label><input type="radio" name="se" value="${seList[i].id}"/>${seList[i].name}</label>`;
+                fieldSEs.innerHTML+=`<div class="Rlabel"><label><input type="radio" name="se" value="${seList[i].id}"/>${seList[i].name}</label></div>`;
             }
             LoadSettings();
         }

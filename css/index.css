@@ -12,7 +12,10 @@
     margin: 50px 0;
     text-align: right;
 }
-/*剧中不好看，还是算了吧*/
+.Rlabel{
+    display: inline-block;
+}
+/*居中不好看，还是算了吧*/
 /*.RootLinks{
     margin: 0 auto;
     width: 360px;
