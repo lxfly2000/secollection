@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         使用我的搜索引擎
 // @namespace    https://github.com/lxfly2000/secollection/raw/master/seredirect.user.js
-// @version      0.2.1
+// @version      0.3
 // @updateURL    https://github.com/lxfly2000/secollection/raw/master/seredirect.user.js
 // @downloadURL  https://github.com/lxfly2000/secollection/raw/master/seredirect.user.js
 // @description  将常见的搜索引擎主页跳转到我的搜索引擎页面
@@ -19,9 +19,9 @@
     'use strict';
 
     var redirect={
-        "bing":"https://lxfly2000.github.io/secollection/?se=https://bing.com/search?q={query}",
-        "baidu":"https://lxfly2000.github.io/secollection/?se=https://www.baidu.com/s?wd={query}",
-        "bilibili":"https://lxfly2000.github.io/secollection/?se=https://search.bilibili.com/all?keyword={query}",
+        "bing":"https://lxfly2000.github.io/secollection/?se=Bing",
+        "baidu":"https://lxfly2000.github.io/secollection/?se=Baidu",
+        "bilibili":"https://lxfly2000.github.io/secollection/?se=Bilibili",
         "safebooru.donmai.us":"https://danbooru.donmai.us",
         "konachan.net":"https://konachan.com"
     };

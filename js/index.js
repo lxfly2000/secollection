@@ -1,6 +1,7 @@
-﻿//页面启动时加载
+﻿var seList=[];
+
+//页面启动时加载
 function OnLoad(){
-    LoadSettings();
     LoadHistory();
     document.onkeypress=function(e){
         var keycode=document.all?event.keycode:e.which;
@@ -10,6 +11,23 @@ function OnLoad(){
         }
     };
     textQuery.focus();
+    LoadSE();
+}
+
+function LoadSE(){
+    const seUrl="se.json";
+    var xhr=new XMLHttpRequest();
+    xhr.open("GET",seUrl,true);
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState===4 && xhr.status===200){
+            seList=JSON.parse(xhr.responseText);
+            for(var i=0;i<seList.length;i++){
+                fieldSEs.innerHTML+=`<label><input type="radio" name="se" value="${seList[i].id}"/>${seList[i].name}</label>`;
+            }
+            LoadSettings();
+        }
+    };
+    xhr.send();
 }
 
 //加载设置
@@ -100,5 +118,5 @@ function GoSearch(){
     var se=GetSearchEngine();
     SaveSettings(se);
     AddHistory(textQuery.value);
-    location.href=se.replace("{query}",encodeURIComponent(textQuery.value));
+    location.href=seList.find((x) => x.id === se).url.replace("{query}", encodeURIComponent(textQuery.value));
 }
